@@ -3,11 +3,15 @@
   "version": "1.0.2",
   "description": "Common web services",
   "main": "src/index.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/sword-dev/cws.git"
+  "repository": "github:sword-dev/cws",
+  "author": "Daniel Galindo <hello@danielgalindo.dev> (https://danielgalindo.dev/)",
+  "homepage": "https://github.com/sword-dev/cws#readme",
+  "bugs": {
+    "url": "https://github.com/sword-dev/cws/issues"
   },
-  "author": "Daniel Galindo (@danielgdev)",
+  "engines": {
+    "node": ">=10"
+  },
   "license": "MIT",
   "private": false,
   "scripts": {
