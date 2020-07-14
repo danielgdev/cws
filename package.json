@@ -1,20 +1,23 @@
 {
-  "name": "@sword-dev/web-services",
-  "version": "1.0.1",
+  "name": "@sword-dev/cws",
+  "version": "1.0.2",
   "description": "Common web services",
-  "main": "dist/index.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/sword-dev/web-services.git"
+  "main": "src/index.js",
+  "repository": "github:sword-dev/cws",
+  "author": "Daniel Galindo <hello@danielgalindo.dev> (https://danielgalindo.dev/)",
+  "homepage": "https://github.com/sword-dev/cws#readme",
+  "bugs": {
+    "url": "https://github.com/sword-dev/cws/issues"
   },
-  "author": "hello@danielgalindo.dev",
+  "engines": {
+    "node": ">=10"
+  },
   "license": "MIT",
   "private": false,
   "scripts": {
     "build": "babel src --out-dir dist --presets=@babel/preset-env",
     "lint:js": "eslint --ext .js .",
-    "lint": "yarn lint:js",
-    "postinstall": "yarn build"
+    "lint": "yarn lint:js"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.4",
