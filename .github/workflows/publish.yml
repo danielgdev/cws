@@ -13,19 +13,9 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: '10.x'
-          registry-url: 'https://registry.npmjs.org'
+          registry-url: 'https://npm.pkg.github.com'
 
       - run: npm install
-
-      # Publish to npm
-      - run: npm publish --access public
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-
-      # Setup .npmrc file to publish to GitHub Packages
-      - uses: actions/setup-node@v1
-        with:
-          registry-url: 'https://npm.pkg.github.com'
 
       # Publish to GitHub Packages
       - run: npm publish
