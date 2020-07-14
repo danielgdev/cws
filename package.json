@@ -1,0 +1,27 @@
+{
+  "name": "web-services",
+  "version": "1.0.1",
+  "description": "Common web services",
+  "main": "dist/index.js",
+  "repository": "https://github.com/sword-dev/web-services.git",
+  "author": "Daniel Galindo <hello@danielgalindo.dev>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "babel src --out-dir dist --presets=@babel/preset-env",
+    "lint:js": "eslint --ext .js .",
+    "lint": "yarn lint:js",
+    "postinstall": "yarn build"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.4",
+    "@babel/core": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.4.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "prettier": "^2.0.5",
+    "yarn": "^1.22.4"
+  }
+}
