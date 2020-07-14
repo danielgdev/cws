@@ -1,0 +1,30 @@
+name: Lint and Build Code
+on:
+  push:
+    branches:
+      - '*'
+      - '*/*'
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '10.x'
+
+      - run: npm install -g yarn
+
+      - name: Install dependencies
+        run: |
+          yarn
+
+      - name: Execute Lint
+        run: |
+          yarn lint
+
+      - name: Build
+        run: |
+          yarn build
