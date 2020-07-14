@@ -9,13 +9,15 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      # Setup .npmrc file to publish to npm
       - uses: actions/setup-node@v1
         with:
           node-version: '10.x'
-          registry-url: 'https://npm.pkg.github.com'
 
-      - run: npm install
+      - run: npm install -g yarn
+
+      - name: Install dependencies
+        run: |
+          yarn
 
       # Publish to GitHub Packages
       - run: npm publish
