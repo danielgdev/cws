@@ -1,6 +1,6 @@
 {
   "name": "@sword-dev/cws",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Common web services",
   "main": "src/index.js",
   "repository": "github:sword-dev/cws",
