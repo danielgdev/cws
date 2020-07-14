@@ -1,4 +1,4 @@
-name: Publish Release to NPM - Github package
+name: Publish Release to NPM - GitHub Package
 on:
   release:
     types: [published]
