@@ -16,4 +16,9 @@ export default {
       val
     )
   },
+  password(val) {
+    return /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/.test(
+      val
+    )
+  },
 }
