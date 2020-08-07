@@ -18,3 +18,4 @@ Common web services
 - string
 - slug
 - url
+- password
