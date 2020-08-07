@@ -1,6 +1,6 @@
 {
   "name": "@sword-dev/cws",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "Common web services",
   "main": "src/index.js",
   "repository": "github:sword-dev/cws",
@@ -12,6 +12,10 @@
   "engines": {
     "node": ">=10"
   },
+  "files": [
+    "src",
+    "package.json"
+  ],
   "license": "MIT",
   "private": false,
   "scripts": {
