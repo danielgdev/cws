@@ -12,6 +12,10 @@
   "engines": {
     "node": ">=10"
   },
+  "files": [
+    "src",
+    "package.json"
+  ],
   "license": "MIT",
   "private": false,
   "scripts": {
